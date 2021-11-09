@@ -2,8 +2,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/favourites.css">
-    <title>Favoritos</title>
+    <link rel="stylesheet" href="../styles/marvel2.css">
+    <title>Marvel</title>
+
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!--font oswald-->
@@ -15,32 +16,35 @@
 </head>
 
 <body>
-    <div background="banner.jpg">
+    <div >
         <div class="container">
             <header>
                 <div class="app-name center"><a href='../index.html'><i class="fas fa-home"></i></a></div>
+                <div class="search-container center">
+                    <input class="input" type="text"  id="search-data" placeholder="Busca tu héroe" aria-label="Search">
+                </div>
                 <div class="favourite-router center">
-                    <button type="button" class="btn btn-outline-info"><a href="marvel.html">
-                        <i class="far fa-arrow-alt-circle-left"></i></a></button>
+                    <button type="button" class="btn btn-outline-info"><a href="favourites.html"><i class="far fa-star"></i></a></button>
                 </div>
             </header>
-
+    
+    
             <!-- Notification Alert -->
             <div id="alert" style="visibility:hidden" class="success">Success Message</div>
             <div id="alert" style="visibility:hidden" class="failure">Error Message</div>
+    
+    
+           <!--  Main Search results -->
+           <div id="result-container">                 
+              <div class="text-center" id='results'> 
+            
+            </div> 
+        </div> 
+        </div>
+        
+    </div>
 
-            <!-- Main favs  -->
-            <div id="result-container">
-                <div id='results'>
-
-                    Tus personajes favoritos...
-
-                </div>
-            </div>
-
-
-
-            <script type="text/javascript" src="../scripts/favourites.js"></script>
+    <script type="text/javascript" src="../scripts/index.js"></script>
 </body>
 
 </html>
